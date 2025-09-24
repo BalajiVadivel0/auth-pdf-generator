@@ -20,7 +20,7 @@ async function signup() {
   const data = await res.json();
   alert(data.msg || data.error);
   if (data.msg) {
-    showPage("loginPage"); // go to login after signup
+    showPage("loginPage"); 
   }
 }
 
@@ -37,7 +37,7 @@ async function login() {
   if (data.token) {
     token = data.token;
     alert("Login successful!");
-    showPage("pdfPage"); // show PDF page
+    showPage("pdfPage");  
   } else {
     alert(data.msg || "Login failed");
   }

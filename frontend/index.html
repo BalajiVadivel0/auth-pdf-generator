@@ -9,7 +9,6 @@
 <body>
   <div class="container">
 
-    <!-- Signup Page -->
     <div id="signupPage">
       <h2>Signup</h2>
       <input id="signupUser" placeholder="Username">
@@ -18,7 +17,6 @@
       <span class="link" onclick="showPage('loginPage')">Already have an account? Login</span>
     </div>
 
-    <!-- Login Page -->
     <div id="loginPage" class="hidden">
       <h2>Login</h2>
       <input id="loginUser" placeholder="Username">
@@ -27,14 +25,12 @@
       <span class="link" onclick="showPage('signupPage')">Don’t have an account? Signup</span>
     </div>
 
-    <!-- PDF Page -->
     <div id="pdfPage" class="hidden">
       <h2>Generate PDF</h2>
       <textarea id="pdfContent" placeholder="Enter your text here"></textarea>
       <button onclick="generatePDF()">Generate PDF</button>
       <button class="logout" onclick="logout()">Logout</button>
     </div>
-
   </div>
 
   <script src="script.js"></script>
