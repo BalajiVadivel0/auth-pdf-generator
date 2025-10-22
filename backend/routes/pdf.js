@@ -3,8 +3,7 @@ const PDFDocument = require("pdfkit");
 const authMiddleware = require("../middleware/authMiddleware");
 
 const router = express.Router();
-
-// Generate PDF
+ 
 router.post("/generate-pdf", authMiddleware, (req, res) => {
   const { content } = req.body;
 
